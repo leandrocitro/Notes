@@ -8,10 +8,7 @@ export function Details() {
   return (
     
       <Container>
-        <h1>Fluminense CAMPEÃO Recopa 2023</h1>
-        <Button />
-        <Button />
-        <Button />
+        <Button title="Voltar"/>
       </Container>
       
    
