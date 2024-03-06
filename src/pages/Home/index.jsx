@@ -17,9 +17,11 @@ export function Home() {
             <Header />
 
             <Menu>
-                <li><ButtonText title="Todos" /></li>
+                <li><ButtonText title="Todos" isActive/></li>
                 <li><ButtonText title="React" /></li>
                 <li><ButtonText title="Node" /></li>
+                <li><ButtonText title="Java" /></li>
+                <li><ButtonText title="Phyton" /></li>
             </Menu>
 
             <Search>
