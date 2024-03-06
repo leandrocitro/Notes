@@ -9,9 +9,9 @@ import { Container, Form } from './styles';
 
 
 
-export function New(){
-    return(
-        <Container> 
+export function New() {
+    return (
+        <Container>
             <Header />
 
             <main>
@@ -22,11 +22,11 @@ export function New(){
                     </header>
 
                     <Input placeholder="Título" />
-                    <Textarea placeholder="Observações"/>
+                    <Textarea placeholder="Observações" />
 
                     <Section title="Links úteis">
                         <NoteItem value="https://Rockeseat.com.br" />
-                        <NoteItem isNew />
+                        <NoteItem isNew placeholder="Novo link" />
                     </Section>
                 </Form>
             </main>
