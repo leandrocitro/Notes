@@ -12,6 +12,14 @@ export const Container = styled.div`
     grid-template-areas:
     "header"
     "content";
+
+    .tags{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0;
+
+    }
 `;
 
 export const Form = styled.form`

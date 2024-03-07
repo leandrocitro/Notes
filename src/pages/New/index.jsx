@@ -26,8 +26,16 @@ export function New() {
 
                     <Section title="Links úteis">
                         <NoteItem value="https://Rockeseat.com.br" />
-                        <NoteItem isNew placeholder="Novo link" />
+                        <NoteItem isNew={true} placeholder="Novo link" />
                     </Section>
+
+                    <Section title="Marcadores" />
+                    <div className="tags">
+                        <NoteItem value="React" />
+                        <NoteItem value="Node" />
+                        <NoteItem value="Java" />
+                        <NoteItem isNew={true} placeholder="Nova tag" />
+                    </div>
                 </Form>
             </main>
         </Container>

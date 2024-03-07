@@ -14,7 +14,6 @@ border-radius: 10px;
 > input {
     height: 56px;
     width: 100%;
-
     padding: 12px;
 
     color: ${({ theme }) => theme.COLORS.WHITE};
