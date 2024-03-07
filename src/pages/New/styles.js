@@ -4,14 +4,18 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     width: 100%;
-    height: 100%vh;
+    height: 100vh;
 
     display: grid;
     grid-template-rows:  105px auto;
-
     grid-template-areas:
     "header"
     "content";
+
+    > main {
+        grid-area: content;
+        overflow-y: auto;
+    }
 
     .tags{
         display: flex;
@@ -23,7 +27,7 @@ export const Container = styled.div`
 `;
 
 export const Form = styled.form`
-    max-width: 550px;
+    max-width: 460px;
     margin: 38px auto;
 
     > header {
