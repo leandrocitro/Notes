@@ -16,13 +16,13 @@ export function SignIn() {
 
                 <h2>Faça seu Login</h2>
 
-                <Input
+                <Input id="name"
                     placeholder="E-mail"
                     type="text"
                     icon={FiMail}
                 />
 
-                <Input
+                <Input id="password"
                     placeholder="Senha"
                     type="password"
                     icon={FiLock}
@@ -30,7 +30,7 @@ export function SignIn() {
 
                 <Button title="Entrar" />
                 
-                <Link to="/register">
+                <Link to="/SignUp">
                     Criar Conta
                 </Link>
                 
