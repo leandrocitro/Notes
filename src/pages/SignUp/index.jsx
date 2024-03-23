@@ -8,13 +8,16 @@ import { Container, Form, Background } from './styles';
 
 
 export function SignUp() {
+   
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
-    function handleSignUp(){
-        console.log("Test Button");
+    function handleSignUp() {
+        console.log("Teste");
+
     }
+
 
     return (
         <Container>
@@ -46,15 +49,20 @@ export function SignUp() {
                     onChange={e => setPassword(e.target.value)}
                 />
 
-                <Button title="Cadastrar" onClick={ handleSignUp } />
-                    
+                
+                <Button title="Teste" type="button" onClick={handleSignUp}> teste</Button>
+
+                <button type="button" onClick={handleSignUp}>Teste</button>
+
                 <Link to="/SignIn" >
                     Voltar para o login
                 </Link>
-                
+
 
             </Form>
-            
+
+
+
 
         </Container>
     );

@@ -1,12 +1,14 @@
-import { Container } from "./styles";
+import { ButtonContainer } from "./styles";
 import React from 'react';
 
 
-export function Button({ title }) {
+export function Button({ title, onclick }) {
 
     return(
-    <Container type="button">
-        {title}        
-    </Container>
+    <button type="button">
+        {title}
+        {onclick}    
+        
+    </button>
     );
 }
