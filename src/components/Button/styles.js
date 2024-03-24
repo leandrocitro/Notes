@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ButtonContainer = styled.button`
+export const Container = styled.button`
     width: 100%;
     background-color: ${({ theme }) => theme.COLORS.ORANGE};
     color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
@@ -12,6 +12,10 @@ export const ButtonContainer = styled.button`
     border-radius: 10px;
     font-weight: 500;
     cursor: pointer;
+
+    &:disabled {
+        opacity: 0.5;
+    }
 
  
 `;

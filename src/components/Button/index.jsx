@@ -1,14 +1,15 @@
-import { ButtonContainer } from "./styles";
+import { Container } from "./styles";
 import React from 'react';
 
 
-export function Button({ title, onclick }) {
+export function Button({ title, loading = false, ...rest }) {
 
     return(
-    <button type="button">
-        {title}
-        {onclick}    
-        
-    </button>
+    <Container type="button"   
+        disabled={loading} 
+        {...rest }
+    >
+        {loading ? 'Carregando...': title}   
+    </Container>
     );
 }
